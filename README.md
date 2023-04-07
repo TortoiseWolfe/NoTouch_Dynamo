@@ -1,6 +1,6 @@
 # [Checklist:](https://bimorph.com/wp-content/uploads/2018/11/BILT%20EUR%202018%20-%20Thomas%20Mahon%20-%20Session%201.5%20and%202.3%20-%20Handout.pdf "Become a Dynamo Zero Touch Node Developer in 75 Minutes Thomas Mahon, Bimorph")
 
-## 1. Create a new Class Library project in Visual Studio
+## 1. [Create a new Class Library project in Visual Studio](https://www.google.com "YouTube Walk Through")
   - Open Visual Studio
   - Click on "Create a new project"
   - Choose __"Class Library (.NET Framework)"__
@@ -77,9 +77,10 @@
   - Right-click on "References" in the Solution Explorer
   - Click on "Add Reference"
   - Browse to the location of the required DLL files and add them:
-    - Dynamo Core (DynamoCore.dll)
-    - Dynamo Visual Programming (DynamoServices.dll)
-    - Revit API (RevitAPI.dll and RevitAPIUI.dll)
+    - DynamoCore.dll
+    - DynamoServices.dll
+    - RevitAPI.dll
+    - RevitAPIUI.dll
 
 ## 6. Create custom namespace and classes for your nodes (HelloWorld and RevitWall)
   - In the Solution Explorer, right-click on the project and choose "Add" > "Class"
