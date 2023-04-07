@@ -3,7 +3,7 @@
 ## 1. [Create a new Class Library project in Visual Studio](https://www.google.com "YouTube Walk Through")
   - Open Visual Studio
   - Click on "Create a new project"
-  - Choose __"Class Library (.NET Framework)"__
+  - Choose [__"Class Library (.NET Framework)"__](https://forum.dynamobim.com/t/which-class-library/76401 "If you haven’t already, I would do some research on the differences between .NET Framework, .NET Standard, and .NET (formerly .NET Core). It’s important to understand so that you know which platform and version to target during development.")
   - Name the project and set the location
   - Click "Create"
 
