@@ -1,4 +1,4 @@
-# Checklist:
+# [Checklist:](https://bimorph.com/wp-content/uploads/2018/11/BILT%20EUR%202018%20-%20Thomas%20Mahon%20-%20Session%201.5%20and%202.3%20-%20Handout.pdf "Become a Dynamo Zero Touch Node Developer in 75 Minutes Thomas Mahon, Bimorph")
 
 ## 1. Create a new Class Library project in Visual Studio
   - Open Visual Studio
@@ -50,7 +50,29 @@
   - Create a new text file (txt) and copy the provided JSON code into the file
   - Rename the file extension to .json (ignore any Windows warning about changing file extensions)
   - Add the JSON file to the Visual Studio project by right-clicking on the solution file in the Solution Explorer and clicking "Add" > "Existing Item", then selecting and opening the JSON file
-
+```
+{
+  "license": "MIT",
+  "name": "zero-touch-nodes",
+  "version": "1.0.0",
+  "description": "A collection of Zero Touch Dynamo nodes.",
+  "group": "YourGroupName",
+  "keywords": [ "ZeroTouch", "dynamo" ],
+  "dependencies": {
+    "Dynamo": "2.x.x"
+  },
+  "contents": "Zero Touch Nodes - A collection of simple Zero Touch Dynamo nodes.",
+  "engine_version": "1.0.0",
+  "engine": "dynamo",
+  "engine_metadata": "",
+  "site_url": "",
+  "repository_url": "",
+  "contains_binaries": true,
+  "node_libraries": [
+    "ZeroTouchNodes, Version=1.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
+```
 ## 5. Add Dynamo Core, Dynamo Visual Programming, and Revit API references
   - Right-click on "References" in the Solution Explorer
   - Click on "Add Reference"
