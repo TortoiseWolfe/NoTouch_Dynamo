@@ -3,7 +3,7 @@
 ## 1. Create a new Class Library project in Visual Studio
   - Open Visual Studio
   - Click on "Create a new project"
-  - Choose "Class Library (.NET Framework)"
+  - Choose __"Class Library (.NET Framework)"__
   - Name the project and set the location
   - Click "Create"
 
