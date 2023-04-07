@@ -13,7 +13,7 @@
   - Click on the "Debug" tab and activate the "Start External Program" radio button
   - Browse to your Revit root folder and locate/select the "Revit.exe" file
   - `C:\Program Files\Autodesk\Revit <year>`
-  - [Click on "Tools" > "Options" > "Debugging" > "General" and ensure "Use Managed Compatibility Mode" is checked](https://forum.dynamobim.com/t/setting-up-the-c-environment/76350?u=turtlewolfe "yeah, I was just trying to follow the directions. So, it’s safe to skip this one?")
+  - [~~Click on "Tools" > "Options" > "Debugging" > "General" and ensure "Use Managed Compatibility Mode" is checked~~](https://forum.dynamobim.com/t/setting-up-the-c-environment/76350?u=turtlewolfe "yeah, I was just trying to follow the directions. So, it’s safe to skip this one?")
   - Click on "Tools" > "Options" > "Projects and Solutions" > "Build and Run" and ensure "Always build" option is selected under "On Run, when projects are out of date"
 
 ## 3. Configure .csproj File
