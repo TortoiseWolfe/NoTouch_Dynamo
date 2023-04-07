@@ -12,6 +12,7 @@
   - Click on the "Build" tab and select "x64" from the "Platform Target" drop-down
   - Click on the "Debug" tab and activate the "Start External Program" radio button
   - Browse to your Revit root folder and locate/select the "Revit.exe" file
+  - `C:\Program Files\Autodesk\Revit <year>`
   - Click on "Tools" > "Options" > "Debugging" > "General" and ensure "Use Managed Compatibility Mode" is checked
   - Click on "Tools" > "Options" > "Projects and Solutions" > "Build and Run" and ensure "Always build" option is selected under "On Run, when projects are out of date"
 
