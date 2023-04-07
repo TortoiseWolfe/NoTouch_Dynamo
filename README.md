@@ -98,7 +98,8 @@
 ## 9. Set the output path for the build
   - In Visual Studio, right-click on the project in the Solution Explorer and select "Properties"
   - Click on the "Build" tab
-  - Set the "Output path" to the Dynamo packages folder (usually located at `C:\Users\<username>\AppData\Roaming\Dynamo\Dynamo Revit\<version>\packages` often hidden by default, right click on view in file explorer)
+  - Set the "Output path" to the Dynamo packages folder (usually located at `C:\Users\<username>\AppData\Roaming\Dynamo\Dynamo Revit\<version>\packages` maybe hidden by default, click on the "View" tab in the toolbar.
+Check the "Hidden items" checkbox in the "Show/hide" section.)
 
 ## 10. Compile the solution and create a DLL file
   - In Visual Studio, click on "Build" > "Build Solution"
