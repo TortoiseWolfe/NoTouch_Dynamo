@@ -81,7 +81,12 @@
     - DynamoServices.dll
     - RevitAPI.dll
     - RevitAPIUI.dll
-
+```
+C:\Program Files\Autodesk\Revit 2023\AddIns\DynamoForRevit\DynamoCore.dll	
+C:\Program Files\Autodesk\Revit 2023\AddIns\DynamoForRevit\DynamoServices.dll	
+C:\Program Files\Autodesk\Revit 2023\RevitAPI.dll
+C:\Program Files\Autodesk\Revit 2023\RevitAPIUI.dll
+```
 ## 6. Create custom namespace and classes for your nodes (HelloWorld and RevitWall)
   - In the Solution Explorer, right-click on the project and choose "Add" > "Class"
   - Name the class (e.g., HelloWorld.cs and RevitWall.cs) and click "Add"
