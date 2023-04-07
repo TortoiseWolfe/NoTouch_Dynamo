@@ -22,32 +22,28 @@
   - Scroll down to the bottom of the file and copy and paste the provided XML snippet before the closing </project> tag
   - Save the changes and right-click on the project in the Solution Explorer, then select "Reload Project"
 ```
-<Target Name="AfterBuild">
-  <!-- Copy the package to the Dynamo package root directory -->
-  <GetReferenceAssemblyPaths TargetFrameworkMoniker=".NETFramework, Version=v2.0">
-    <Output TaskParameter="FullFrameworkReferenceAssemblyPaths"
-      PropertyName="FrameworkAssembliesPath" />
-  </GetReferenceAssemblyPaths>
-  <GetAssemblyIdentity AssemblyFiles="$(OutDir)$(TargetName).dll">
-    <Output TaskParameter="Assemblies" ItemName="AssemblyInfo" />
-  </GetAssemblyIdentity>
-  <ItemGroup>
-    <SourceDlls Include="$(TargetDir)*.dll" />
-    <SourcePdbs Include="$(TargetDir)*.pdb" />
-    <SourcePdbs Include="$(TargetDir)*.pdb" />
-    <SourceXmls Include="$(TargetDir)*.xml" />
-    <SourcePkg Include="pkg.json" />
-  </ItemGroup>
-  <RemoveDir Directories="$(AppData)\Dynamo\Dynamo Revit\2.0\packages\$(ProjectName)\bin" />
-  <Copy SourceFiles="@(SourceDlls)" DestinationFolder="$(AppData)\Dynamo\Dynamo 
-    Revit\2.0\packages\$(ProjectName)\bin\%(RecursiveDir)" />
-  <Copy SourceFiles="@(SourcePkg)" DestinationFolder="$(AppData)\Dynamo\Dynamo 
-    Revit\2.0\packages\$(ProjectName)\" />
-  <Copy SourceFiles="@(SourcePdbs)" DestinationFolder="$(AppData)\Dynamo\Dynamo 
-    Revit\2.0\packages\$(ProjectName)\bin\" />
-  <Copy SourceFiles="@(SourceXmls)" DestinationFolder="$(AppData)\Dynamo\Dynamo 
-    Revit\2.0\packages\$(ProjectName)\bin\" />
-</Target>
+	<Target Name="AfterBuild">
+		<!--Copy the package to the Dynamo package root directory-->
+		<GetReferenceAssemblyPaths TargetFrameworkMoniker=".NETFramework, Version=v2.0">
+			<Output TaskParameter="FullFrameworkReferenceAssemblyPaths"
+		   PropertyName="FrameworkAssembliesPath" />
+		</GetReferenceAssemblyPaths>
+		<GetAssemblyIdentity AssemblyFiles="$(OutDir)$(TargetName).dll">
+			<Output TaskParameter="Assemblies" ItemName="AssemblyInfo" />
+		</GetAssemblyIdentity>
+		<ItemGroup>
+			<SourceDlls Include="$(TargetDir)*.dll" />
+			<SourcePdbs Include="$(TargetDir)*.pdb" />
+			<SourcePdbs Include="$(TargetDir)*.pdb" />
+			<SourceXmls Include="$(TargetDir)*.xml" />
+			<SourcePkg Include="pkg.json" />
+		</ItemGroup>
+		<RemoveDir Directories="$(AppData)\Dynamo\Dynamo Revit\2.17\packages\$(ProjectName)\bin" />
+		<Copy SourceFiles="@(SourceDlls)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.17\packages\$(ProjectName)\bin\%(RecursiveDir)" />
+		<Copy SourceFiles="@(SourcePkg)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.17\packages\$(ProjectName)\" />
+		<Copy SourceFiles="@(SourcePdbs)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.17\packages\$(ProjectName)\bin\" />
+		<Copy SourceFiles="@(SourceXmls)" DestinationFolder="$(AppData)\Dynamo\Dynamo Revit\2.17\packages\$(ProjectName)\bin\" />
+	</Target>
 ```
 
 ## 4. Create Custom Package JSON
